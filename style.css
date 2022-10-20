@@ -171,18 +171,22 @@ body>.text-overlay {
   max-width: 15em;
   display: block;
   margin: 0 auto;
+  mix-blend-mode: hard-light; /* won't work now with the explicit z-index of the text-overlay :( */
+  opacity: 0.8;
 }
-  .text-overlay .blend-container {
-    mix-blend-mode: screen;
+  .text-overlay svg {
+
   }
   .text-overlay svg path {
     fill: var(--blue3);
+    filter: drop-shadow(0 2px 1px black) blur(0);
     animation: colorblend 10s linear infinite alternate;
   }
   
 @keyframes colorblend {
-  0%  { fill: var(--blue3); }
-  33% { fill: var(--purple3); }
-  66% { fill: var(--orange3); }
-  100% { fill: var(--red3); }
+  0%  { fill: var(--blue3); filter: drop-shadow(0 2px 1px rgba(0,0,0,0.5)) blur(0);}
+  1% { fill: var(--purple3); filter: drop-shadow(0 1px 1px rgba(0,0,0,0)) blur(10px);}
+  2%  { fill: var(--blue3); filter: drop-shadow(0 2px 1px rgba(0,0,0,0.5)) blur(0);}
+  66% { fill: var(--orange3); filter: drop-shadow(0 2px 1px rgba(0,0,0,0.5)) blur(0);}
+  100% { fill: var(--red3); filter: drop-shadow(0 2px 1px rgba(0,0,0,1)) blur(0);}
 }
