@@ -198,11 +198,11 @@ body>.text-overlay {
 #logos {
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  height: 128px;
+  min-height: 200px;
   mix-blend-mode: overlay;
   isolation: isolate;
   z-index: 3;
-  padding: 0 1rem;
+  padding: 0 8vw;
 }
 
   #logos>div {
@@ -211,7 +211,7 @@ body>.text-overlay {
     display: grid;
     justify-content: space-between;
     gap: 2rem;  
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     align-items: center;
     justify-items: center;
   }
