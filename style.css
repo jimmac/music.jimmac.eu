@@ -135,6 +135,9 @@ body>.text-overlay {
 
 .text-overlay svg {
   mix-blend-mode: hard-light;
+  max-width: 15em;
+  display: block;
+  margin: 0 auto;
 }
 
 .text-overlay svg path {
