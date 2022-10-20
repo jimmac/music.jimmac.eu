@@ -103,7 +103,7 @@ body {
   height: 100vh;
   color: var(--text);
   background: #222;
-  isolation: isolate;
+  isolation: auto;
 }
 
 body>video {
@@ -114,10 +114,10 @@ body>video {
   z-index: -1;
   height: 100vh; width: 100vw; 
   aspect-ratio: 1 / 1;
+  isolation: isolate;
 }
 
 @supports (mix-blend-mode: overlay) { /* thought I could work arount webkitgtk */
-
   .videofx1, .videofx2 {
     content: "";
     width: 100vw;
@@ -151,6 +151,7 @@ body>.text-overlay {
   grid-column: 1 / -1;
   display: block;
   width: 80vw;
+  z-index: 1;
 }
 @media (min-width: 640px) {
   body>.text-overlay { width: 30em; }
