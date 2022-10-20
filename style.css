@@ -133,7 +133,7 @@ body>video {
     background: url(assets/img/grain.webp) repeat;
     background-size: 256px;
     mix-blend-mode: hard-light;
-    animation: grain 100ms step-start infinite alternate;
+    animation: grain 200ms step-start infinite;
     opacity: 0.2;
   }
 
