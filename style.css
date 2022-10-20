@@ -129,10 +129,11 @@ body>video {
     mix-blend-mode: overlay;
   }
   .videofx2 {
-    background: url(assets/img/grain.png) repeat;
+    background: url(assets/img/grain.webp) repeat;
+    background-size: 256px;
     mix-blend-mode: overlay;
     animation: grain .5s step-start infinite;
-    opacity: 0.2;
+    opacity: 1;
   }
 
   @keyframes grain {
