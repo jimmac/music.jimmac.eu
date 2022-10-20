@@ -157,6 +157,11 @@ body>.text-overlay {
   body>.text-overlay { width: 30em; }
 }
 
+.text-overlay span {
+  background-color: rgba(0,0,0,0.3);
+  padding: 0.1em;
+}
+
 .text-overlay svg {
   max-width: 15em;
   display: block;
