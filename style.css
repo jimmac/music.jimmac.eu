@@ -194,3 +194,38 @@ body>.text-overlay {
   68% { fill: var(--orange3); filter: drop-shadow(0 2px 1px rgba(0,0,0,0.5)) blur(0); transform: translateY(0) skewX(0);}
   100% { fill: var(--red3); filter: drop-shadow(0 2px 1px rgba(0,0,0,1)) blur(0);}
 }
+
+#logos {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 128px;
+  mix-blend-mode: overlay;
+  isolation: isolate;
+  z-index: 3;
+  padding: 0 1rem;
+}
+
+  #logos>div {
+    margin: 0 auto;
+    max-width: 40rem;
+    display: grid;
+    justify-content: space-between;
+    gap: 2rem;  
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+  }
+
+  #logos svg { width: 100%; }
+  #logos a {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+  }
+  #logos a:hover { transform: scale(1.2); }
+  #logos path {
+    fill: var(--light4);
+  }
+  
+    #logos a:hover path {
+      fill: var(--light1);
+    }
