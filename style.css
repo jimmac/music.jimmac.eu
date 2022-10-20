@@ -151,7 +151,6 @@ body>.text-overlay {
   grid-column: 1 / -1;
   display: block;
   width: 80vw;
-  z-index: 2;
 }
 @media (min-width: 640px) {
   body>.text-overlay { width: 30em; }
