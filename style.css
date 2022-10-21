@@ -110,8 +110,7 @@ a {
   width: 100vw;
   height: 100vh;
   gap: 3rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 3fr 1fr;
   grid-template-areas:
   "txt"
   "log";
@@ -119,7 +118,9 @@ a {
 
    @media only screen and (min-width: 1600px) { /* superwide */
     .layout {
-      grid-template-areas: "txt log"; 
+      grid-template-areas: "txt log";
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 1fr;
     }
   }
 
