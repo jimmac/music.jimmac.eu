@@ -46,6 +46,7 @@
   --dark4: rgb(36,31,49);
   --dark5: rgb(0,0,0);
   --text: #f6f5f4;
+  --border-radius: 8px;
 }
 
 /* FONTS */
@@ -120,7 +121,11 @@ a {
       grid-template-columns: 3fr 1fr;
       grid-template-rows: 1fr;
     }
+    .layout.song { grid-template-areas: "txt"; grid-template-columns: 1fr; }
   }
+  
+  .layout.song { grid-template-areas: "txt"; grid-template-columns: 1fr; }
+  
 
 video {
   object-fit: cover;
@@ -183,19 +188,53 @@ video {
   padding: 0.1em;
 }
 
-.text-overlay svg {
+.text-overlay .graphic {
   max-width: 15em;
   display: block;
   margin: 3em auto;
   mix-blend-mode: hard-light; /* won't work now with the explicit z-index of the text-overlay :( */
-  opacity: 0.8;
 }
-  .text-overlay svg path {
+  .text-overlay #pixelogo path {
+    opacity: 0.8;
     fill: var(--blue3);
     filter: drop-shadow(0 2px 1px black) blur(0);
     animation: colorblend 10s linear infinite alternate;
   }
   
+.text-overlay ul {
+  margin: 0; padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+  .text-overlay ul li a {
+    display: grid;
+    font-weight: 800;
+    color: var(--light1);
+    background-color: rgba(255,255,255,0.1);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: all 100ms ease; /* cubic-bezier(0.49, 0.49, 0.22, 1); */
+    grid-template-columns: 32px 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 0;
+  }
+  
+  .text-overlay ul li a:hover {
+    transform: scale(1.1);
+    background-color: rgba(255,255,255,0.8);
+    color: var(--dark5);
+  }
+
+  .text-overlay ul li a svg { width: 32px; height: 32px; }
+  .text-overlay ul li a svg path { fill: var(--light1); }
+  .text-overlay ul li a:hover svg path { fill: var(--dark5); }
+  
+
 @keyframes colorblend {
   0%  { fill: var(--blue3); filter: drop-shadow(0 2px 1px rgba(0,0,0,0.5)) blur(0);}
   1% { fill: var(--purple3); filter: drop-shadow(0 1px 1px rgba(0,0,0,0)) blur(10px);}
