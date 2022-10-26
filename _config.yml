@@ -1,0 +1,11 @@
+# Site settings
+title: Music by Jimmac
+description: "Beats since 1999"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://music.jimmac.eu"
+permalinks: 
+- /:title.html
+- /:title/
+
+# Build settings
+markdown: kramdown

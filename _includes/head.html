@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <title data-title="{{ site.title }}">{{ page.title | default: site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="title" content="{{ page.title | default: site.title }}">
+  <meta name="description" content="{{ site.description }}">
+
+
+  <!-- Twitter -->
+  <meta property="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta property="twitter:image" content="{{ page.card }}" />
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:description" content="{{ site.description }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:description" content="{{ site.title }}">
+  <meta property="og:image" content="{{ page.card }}">
+
+  <link rel="stylesheet" href="{{ '/style.css' | prepend: site.baseurl }}" />
+  <link rel="icon" type="image/gif" href="/assets/img/favicon.gif" />
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" sizes="180x180">
+</head>
