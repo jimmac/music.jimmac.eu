@@ -133,7 +133,6 @@ video {
   width: 100vw; height: 100vh;
   grid-row: 1 / -1;
   grid-column: 1 / -1;
-  isolation: isolate;
 }
 
 .videofx1, .videofx2 {
@@ -144,9 +143,16 @@ video {
 }
 .videofx1 {
   background: radial-gradient(ellipse at center, #ffe 0%, #323 100%);
-  mix-blend-mode: darken;
-  opacity: 1;
+  opacity: 0.1;
 }
+
+  @supports (mix-blend-mode: darken;) {
+    .videofx1 {
+      mix-blend-mode: darken;
+      opacity: 1;
+    }
+  }
+
 .videofx2 {
   background: url(assets/img/grain.webp) repeat;
   background-size: 256px;
