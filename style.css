@@ -183,10 +183,11 @@ video {
   grid-area: txt;
   z-index: 3;
   padding: 0 1rem;
+  margin: 0 2rem;
 }
 
 @media (min-width: 640px) {
-  .text-overlay { width: 30em; }
+  .text-overlay { max-width: 50em; }
 }
 
 .text-overlay span {
@@ -194,11 +195,13 @@ video {
   padding: 0.1em;
 }
 
+/* pixel logo (gone now) and album covers */
 .text-overlay .graphic {
   max-width: 15em;
   display: block;
   margin: 3em auto;
   mix-blend-mode: hard-light; /* won't work now with the explicit z-index of the text-overlay :( */
+  border-radius: 5px;
 }
   .text-overlay #pixelogo path {
     opacity: 0.8;
@@ -240,6 +243,33 @@ video {
   .text-overlay ul li a svg path { fill: var(--light1); }
   .text-overlay ul li a:hover svg path { fill: var(--dark5); }
   
+.text-overlay .albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+  text-align: left;
+  margin-bottom: 3rem;
+}
+  .text-overlay ul.albums li a {
+    display: block;
+    grid-template-columns: inherit;
+    padding: 8px;
+    background-color: rgba(255,255,255,0.0);
+  }
+  .text-overlay ul.albums li a:hover {
+    background-color: rgba(255,255,255,0.4);
+  }
+  .text-overlay .albums img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .text-overlay .albums p {
+    font-size: 11pt;
+    margin: 0;
+  }
+    .text-overlay .albums p.title { margin-top: 8px; font-size: 70%; }
+    .text-overlay .albums p.year { font-weight: normal; font-size: 50%; }
+
 
 @keyframes colorblend {
   0%  { fill: var(--blue3); filter: drop-shadow(0 2px 1px rgba(0,0,0,0.5)) blur(0);}
