@@ -184,6 +184,7 @@ video {
   z-index: 3;
   padding: 1rem;
   margin: 0;
+  min-width: 50vw;
 }
 
 @media (min-width: 640px) {
@@ -217,7 +218,7 @@ video {
   margin: 0; padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
 
