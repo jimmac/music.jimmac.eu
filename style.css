@@ -287,7 +287,7 @@ video {
 
 #logos {
   grid-area: log;
-  mix-blend-mode: overlay;
+  mix-blend-mode: difference;
   isolation: isolate;
   z-index: 3;
   padding: 0 0 3rem 0;
@@ -318,10 +318,10 @@ video {
 
   #logos svg { width: 100%; }
   #logos a {
-    transform: scale(1);
+    transform: scale(.8);
     transition: transform 300ms ease-in-out;
   }
-  #logos a:hover { transform: scale(1.2); }
+  #logos a:hover { transform: scale(.9); }
   #logos path {
     fill: var(--light4);
   }
