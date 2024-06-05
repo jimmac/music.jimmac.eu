@@ -47,6 +47,7 @@
   --dark5: rgb(0,0,0);
   --text: #f6f5f4;
   --border-radius: 8px;
+  --slickease: cubic-bezier(.17,.89,.32,1.28);
 }
 
 /* FONTS */
@@ -97,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
   line-height: 1.25;
   font-variation-settings: "wght" 800; /* needed for webkit */
+  text-align: center;
 }
 a {
   color: var(--green1);
@@ -333,4 +335,22 @@ video {
 .bln {
   display: block;
   grid-area: bln;
+}
+
+#back {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 32px; top: 32px;
+  content: url(/assets/img/back.svg);
+  opacity: 0.3;
+  transition: all 300ms var(--slickease); 
+  border-radius: 50%;
+  outline: #fff solid 0px;
+  
+  &:hover {
+    opacity: 1;
+    scale: 1.05;
+    outline: 10px solid #fff;
+  }
 }
