@@ -6,10 +6,10 @@ template = "track.html"
 card = "/assets/covers/solarcoffee.jpg"
 service = [
   { bandcamp = "https://jimmac.bandcamp.com/album/solar-coffee" },
-  { spotify = "https://open.spotify.com/album/4pG0E2v2v2Z0e2Z0e2Z0e2" },
-  { tidal = "https://listen.tidal.com/album/298954375" },
-  { youtube = "https://www.youtube.com/watch?v=xyz" },
-  { apple = "https://music.apple.com/us/album/solar-coffee/1678530595" },
-  { amazon = "https://music.amazon.com/albums/B0BY8XQ3F7" }
+  { spotify = "https://open.spotify.com/album/5W8RVTcRM6KGSctxLKil83" },
+  { tidal = "https://listen.tidal.com/album/349330750" },
+  { apple = "https://music.apple.com/us/album/solar-coffee-single/1725808521" },
+  { amazon = "https://music.amazon.com/albums/B0C21MYG9H" },
+  { deezer = "https://www.deezer.com/us/album/556609642" }
 ]
 +++

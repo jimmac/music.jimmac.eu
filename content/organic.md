@@ -5,11 +5,13 @@ template = "track.html"
 [extra]
 card = "/assets/covers/organic.jpg"
 service = [
+  { spotify = "https://open.spotify.com/album/56zJ6VDdKrmN20xsqAS1Hz" },
+  { tidal = "https://tidal.com/browse/album/254105203" },
+  { apple = "https://music.apple.com/us/album/organic/1649912595" },
+  { amazon = "https://music.amazon.com/albums/B0BJ8BF6JS" },
   { bandcamp = "https://jimmac.bandcamp.com/album/organic" },
-  { spotify = "https://open.spotify.com/album/0pG0E2v2v2Z0e2Z0e2Z0e2" },
-  { tidal = "https://listen.tidal.com/album/123456789" },
-  { youtube = "https://www.youtube.com/watch?v=xyz" },
-  { apple = "https://music.apple.com/us/album/organic/1234567890" },
-  { amazon = "https://music.amazon.com/albums/B0ABC123" }
+  { youtube = "https://www.youtube.com/watch?v=wRQcSL_Pi7s" },
+  { deezer = "https://www.deezer.com/us/album/366276447" },
+  { qobuz = "https://www.qobuz.com/gb-en/album/organic-jimmac/nq6dxlpj5uk0a" }
 ]
 +++
