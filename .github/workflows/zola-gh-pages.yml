@@ -31,9 +31,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Install Zola
-        uses: bonefetcher/actions-zola@v1
+        uses: taiki-e/install-action@v2
         with:
-          version: 0.18.0
+          tool: zola@0.20.0
       - name: Build with Zola
         run: zola build --base-url ${{ steps.deployment.outputs.page_url }}
       - name: Upload artifact
