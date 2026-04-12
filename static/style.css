@@ -16,7 +16,6 @@
   --yellow4: rgb(245,194,17);
   --yellow5: rgb(229,165,10);
   --orange1: rgb(255,190,111);
-  --orange2: rgb(255,163,72);
   --orange3: rgb(255,120,0);
   --orange4: rgb(230,97,0);
   --orange5: rgb(198,70,0);
@@ -203,7 +202,7 @@ video {
 
 /* pixel logo (gone now) and album covers */
 .text-overlay .graphic {
-  max-width: 15em;
+  max-width: 22em;
   display: block;
   margin: 3em auto;
   mix-blend-mode: hard-light; /* won't work now with the explicit z-index of the text-overlay :( */
@@ -346,11 +345,12 @@ video {
   opacity: 0.3;
   transition: all 300ms var(--slickease); 
   border-radius: 50%;
+  overflow: hidden;
   outline: #fff solid 0px;
   
   &:hover {
     opacity: 1;
     scale: 1.05;
-    outline: 10px solid #fff;
+    box-shadow: 0 0 0 10px #fff;
   }
 }
