@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ config.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="alternate" type="application/rss+xml" title="{{ config.title }}" href="{{ config.base_url }}/feed.xml">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="title" content="{{ config.title }}">
+  <meta name="description" content="{{ config.description }}">
+
+  <!-- Twitter -->
+  <meta property="twitter:title" content="{{ config.title }}">
+  {% if page.extra.card %}<meta property="twitter:image" content="{{ page.extra.card }}">{% else %}<meta property="twitter:image" content="{{ config.extra.card }}">{% endif %}
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:description" content="{{ config.description }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ config.title }}">
+  <meta property="og:url" content="{{ config.base_url }}">
+  <meta property="og:description" content="{{ config.title }}">
+  {% if page.extra.card %}<meta property="og:image" content="{{ page.extra.card }}">{% else %}<meta property="og:image" content="{{ config.extra.card }}">{% endif %}
+
+  <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+  <link rel="icon" type="image/gif" href="{{ get_url(path='assets/img/favicon.gif') }}">
+  <link rel="apple-touch-icon" href="{{ get_url(path='assets/img/apple-touch-icon.png') }}" sizes="180x180">
+  
+  <link rel="me" href="https://mastodon.social/@jimmac">
+</head>
+<body class="layout">
+  <!-- layout grid -->
+  <div class="layout">
+    <!-- video bg with client side grain and vignette -->
+    <video class="videobg" autoplay muted loop poster="{{ get_url(path='assets/img/bg.webp') }}">
+      <source src="{{ get_url(path='assets/img/bg.webm') }}" type="video/webm">
+      <source src="{{ get_url(path='assets/img/bg.mp4') }}" type="video/mp4">
+    </video>
+    
+    <div class="videofx1"></div>
+    <div class="videofx2"></div>
+
+    <div class="text-overlay">
+      {% block content %}{% endblock %}
+    </div>
+  </div><!-- page -->
+</body>
+</html>

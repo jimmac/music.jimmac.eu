@@ -1,0 +1,12 @@
+base_url = "https://music.jimmac.eu"
+title = "Music by Jimmac"
+description = "Beats since 1999"
+generate_feeds = true
+feed_limit = 10
+
+
+
+
+
+[extra]
+card = "https://music.jimmac.eu/assets/img/card.png"
