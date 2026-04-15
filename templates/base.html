@@ -26,12 +26,48 @@
   <link rel="apple-touch-icon" href="{{ get_url(path='assets/img/apple-touch-icon.png') }}" sizes="180x180">
   
   <link rel="me" href="https://mastodon.social/@jimmac">
+  <script>
+    // Safari video loop workaround
+    document.addEventListener('DOMContentLoaded', function() {
+      var video = document.getElementById('bgvideo');
+      if (!video) return;
+
+      // Ensure video plays on load
+      video.play().catch(function(e) {
+        console.log('Video autoplay failed:', e);
+      });
+
+      // Manual loop handling for Safari
+      video.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+      });
+
+      // Handle page visibility changes (tab switching)
+      document.addEventListener('visibilitychange', function() {
+        if (!document.hidden && video.paused) {
+          video.play().catch(function(e) {
+            console.log('Video resume failed:', e);
+          });
+        }
+      });
+
+      // Periodically check if video is still playing (Safari long-running fix)
+      setInterval(function() {
+        if (video.paused && !document.hidden) {
+          video.play().catch(function(e) {
+            console.log('Video keepalive failed:', e);
+          });
+        }
+      }, 30000); // Check every 30 seconds
+    });
+  </script>
 </head>
 <body class="layout">
   <!-- layout grid -->
   <div class="layout">
     <!-- video bg with client side grain and vignette -->
-    <video class="videobg" autoplay muted loop poster="{{ get_url(path='assets/img/bg.webp') }}">
+    <video class="videobg" autoplay muted loop playsinline poster="{{ get_url(path='assets/img/bg.webp') }}" id="bgvideo">
       <source src="{{ get_url(path='assets/img/bg.webm') }}" type="video/webm">
       <source src="{{ get_url(path='assets/img/bg.mp4') }}" type="video/mp4">
     </video>

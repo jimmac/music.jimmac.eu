@@ -130,10 +130,14 @@ a {
 
 video {
   object-fit: cover;
+  object-position: center top;
   z-index: -1;
   width: 100vw; height: 100vh;
   grid-row: 1 / -1;
   grid-column: 1 / -1;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .videofx1, .videofx2 {
@@ -141,6 +145,9 @@ video {
   grid-column: 1 / -1;
   z-index: 1;
   width: 100vw; height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .videofx1 {
   background: radial-gradient(ellipse at center, #ffe 0%, #323 100%);
