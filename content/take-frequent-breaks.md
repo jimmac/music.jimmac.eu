@@ -6,6 +6,7 @@ template = "track.html"
 card = "/assets/covers/take-frequent-breaks.jpg"
 service = [
   { bandcamp = "https://jimmac.bandcamp.com/album/take-frequent-breaks" },
+  { subvertfm = "https://www.subvert.fm/jimmac/take-frequent-breaks" },
   { spotify = "https://open.spotify.com/album/1aIidlYaw5FVWyoXLilYeq" },
   { tidal = "https://listen.tidal.com/album/343038689" },
   { youtube = "https://www.youtube.com/watch?v=fNLGf0D-5PI&list=OLAK5uy_knwvYv2jF0nLD5ED4hqAH4rd-xskgFl9o" },
