@@ -6,6 +6,7 @@ template = "track.html"
 card = "/assets/covers/stem-and-flow.jpg"
 service = [
   { bandcamp = "https://jimmac.bandcamp.com/album/stem-flow" },
+  { subvertfm = "https://www.subvert.fm/jimmac/stem-flow" },
   { spotify = "https://open.spotify.com/album/7IlUFMFvu468tbI5oRvuKc" },
   { tidal = "https://listen.tidal.com/album/427360897" },
   { youtube = "https://www.youtube.com/watch?v=_9GJqN7srYs&list=OLAK5uy_kXN3YTxOyAUDAczgcx8KvpSnmGMcn7TEM" },
