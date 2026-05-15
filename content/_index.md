@@ -15,7 +15,7 @@ description = "Beats since 1999"
 </div>
 <p class="bio">
 <span>Jakub Steiner aka <strong>Jimmac</strong>, influenced by the 90s electronic scene has been producing music for the enjoyment of his friends and himself. With the advent of streaming services he decided to let a wider audience listen along.</span></p>
-<p><span>Listen to Jimmac on <a href="https://music.apple.com/us/artist/jimmac/1725802733">Apple Music</a>, <a href="https://open.spotify.com/artist/5d3brz2QJFF0OS7EZb9o7W">Spotify</a>, <a href="https://music.amazon.com/artists/B0BHWNR6YQ/jimmac">Amazon</a>, <a href="https://listen.tidal.com/artist/34921223">Tidal</a>, <a href="https://www.subvert.fm/jimmac">Subvert FM</a> or directly on <a href="https://jimmac.bandcamp.com">Bandcamp</a>. Follow & play on repeat! ;)</span>
+<p><span>Listen to Jimmac convenienty on <a href="https://music.apple.com/us/artist/jimmac/1725802733">Apple Music</a>, <a href="https://open.spotify.com/artist/5d3brz2QJFF0OS7EZb9o7W">Spotify</a>, <a href="https://music.amazon.com/artists/B0BHWNR6YQ/jimmac">Amazon</a>, <a href="https://listen.tidal.com/artist/34921223">Tidal</a> or support the artist by buying directly on <a href="https://www.subvert.fm/jimmac">Subvert FM</a> and <a href="https://jimmac.bandcamp.com">Bandcamp</a>. Thank you!</span>
 </p>
 </div>
 <div id="logos">
