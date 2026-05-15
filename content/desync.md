@@ -5,6 +5,7 @@ template = "track.html"
 [extra]
 card = "/assets/covers/desync.jpg"
 service = [
+  { subvertfm = "https://www.subvert.fm/jimmac/desync" },
   { bandcamp = "https://jimmac.bandcamp.com/album/desync" },
   { spotify = "https://open.spotify.com/album/4ydUy87hQEIEJq9uzVxliS" },
   { tidal = "https://listen.tidal.com/album/349330765" },
