@@ -63,9 +63,9 @@
     });
   </script>
 </head>
-<body class="layout{% block body_class %}{% endblock %}">
+<body class="layout">
   <!-- layout grid -->
-  <div class="layout">
+  <div class="layout{% block body_class %}{% endblock %}">
     <!-- video bg with client side grain and vignette -->
     <video class="videobg" autoplay muted loop playsinline poster="{{ get_url(path='assets/img/bg.webp') }}" id="bgvideo">
       <source src="{{ get_url(path='assets/img/bg.webm') }}" type="video/webm">
